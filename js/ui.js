@@ -104,7 +104,7 @@ class UI {
         // timeout
        setTimeout(function() {
             document.querySelector(`.${className}`).remove();
-       }, 9000);
+       }, 3000);
  
     }
 
