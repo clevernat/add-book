@@ -87,9 +87,12 @@ class UI {
 
 
     alert(message, className) {
+        // Clear Alert
+        this.clearAlert();
+
         const div = document.createElement('div');
         div.classList.add(className);
-        // div.className = 'samuel'
+        div.classList.add('removed');
         div.appendChild(document.createTextNode(message));
 
         const bookForm = document.querySelector('.insertAlert');
@@ -101,8 +104,19 @@ class UI {
         // timeout
        setTimeout(function() {
             document.querySelector(`.${className}`).remove();
-       }, 2000);
+       }, 9000);
+ 
     }
+
+
+    clearAlert() {
+        if(document.querySelector('.removed')) {
+            document.querySelector('.removed').remove();
+        }
+    }
+
+
+   
 
     
 }

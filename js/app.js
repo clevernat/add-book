@@ -101,15 +101,15 @@ function addBook(e) {
         const isbn = this.isbn.value;
 
     if(title != '' && author != '' && isbn != '') {
-        // add book
+             // add book
         ui.addBookToList();
         // clear input fields
         ui.clearFields();
         // Alerts
         ui.alert('BOOK ADDED!', 'success');
+       
     }else{
         ui.alert('ALL FIELDS ARE REQUIRED!', 'error');
-       
     }
     
     e.preventDefault();
